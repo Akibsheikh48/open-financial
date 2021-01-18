@@ -1,0 +1,142 @@
+.second-page {
+  background: transparent url("../../../assets/images/sol_wave_bg.svg") 1px
+    0.0001220703125px no-repeat padding-box;
+  background-size: 1920px 990px;
+  background-color: #fcfcff;
+  height: 900px;
+  display: flex;
+  justify-content: space-around;
+}
+.cards {
+  display: flex;
+  justify-content: space-around;
+}
+.card {
+  margin-left: 15px;
+  cursor: pointer;
+  width: 321px;
+  height: 253px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 10px 10px 20px #68686833;
+  border: 3px;
+  border-radius: 24px;
+  opacity: 0.9;
+}
+.card > img {
+  margin-top: 30px;
+  margin-left: 20px;
+  width: 90px;
+  height: 90px;
+}
+.card > h4 {
+  font: normal normal normal 25px/34px Open "Sans sarif";
+  font-size: 19px;
+  margin-left: 20px;
+  margin-top: 20px;
+  color: #000000;
+}
+.card > p {
+  margin-left: 20px;
+  margin-top: -5px;
+}
+.left-card {
+  margin-left: 39px;
+  margin-top: 90px;
+}
+.card1 {
+  margin-top: 30px;
+  margin-left: 15px;
+  cursor: pointer;
+  width: 321px;
+  height: 253px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 10px 10px 20px #68686833;
+  border: 3px;
+  border-radius: 24px;
+  opacity: 0.9;
+}
+.card1 > img {
+  margin-top: 30px;
+  margin-left: 20px;
+  width: 90px;
+  height: 90px;
+}
+.card1 > h4 {
+  font: normal normal normal 25px/34px Open "Sans sarif";
+  font-size: 19px;
+  margin-left: 20px;
+  margin-top: 20px;
+  color: #000000;
+}
+.card1 > p {
+  margin-left: 20px;
+  margin-top: -5px;
+}
+.color-card {
+  margin-top: 30px;
+  margin-left: 15px;
+  cursor: pointer;
+  width: 321px;
+  height: 253px;
+  color: #ffffff;
+  background-color:#b374f1a9;
+  box-shadow: 10px 10px 20px #68686833;
+  border: 3px;
+  border-radius: 24px;
+  opacity: 0.9;
+}
+.color-card > img {
+  margin-top: 30px;
+  margin-left: 20px;
+  width: 90px;
+  height: 90px;
+}
+.color-card> h4 {
+  font: normal normal normal 25px/34px Open "Sans sarif";
+  font-size: 19px;
+  margin-left: 20px;
+  margin-top: 20px;
+  
+}
+.color-card > p {
+  margin-left: 20px;
+  margin-top: -5px;
+}
+
+          /* Text and Button */
+          
+.text-button {
+  margin-top: 260px;
+  margin-left: -80px;
+}
+.text > h1 {
+  font-size: 29px;
+}
+.line {
+  margin-top: 0;
+  width: 80px;
+  height: 8px;
+  background: #000000 0% 0% no-repeat padding-box;
+  border-radius: 13px;
+  opacity: 0.7;
+}
+
+.small-text {
+  margin-top: 30px;
+}
+.button {
+  text-decoration: none;
+  font-size: 18px;
+  color: #663399;
+}
+.button1 {
+  margin-top: 28px;
+  background: transparent;
+  padding: 8px 35px;
+  border-radius: 35px;
+  border: 2px solid #663399;
+  text-decoration: none;
+  transition: 0.05s;
+  opacity: 1;
+  z-index: 10;
+}

@@ -1,0 +1,450 @@
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * Delete the template below * * * * * * * * * * -->
+<!-- * * * * * * * to get started with your project! * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<style>
+  :host {
+    font-size: 14px;
+    color: #333;
+    box-sizing: border-box;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 8px 0;
+    color: #0a0a0a;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  .spacer {
+    flex: 1;
+  }
+
+  /* Navbar */
+  .Navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+    font-weight: 600;
+  }
+
+  .Navbar img {
+    margin: 0 120px;
+    margin-top: 27px;
+    left: 120px;
+    width: 120px;
+    height: 120px;
+    opacity: 1;
+    cursor: pointer;
+  }
+
+  .navbar-list {
+    margin-top: 53px;
+    left: 1030px;
+    width: 103px;
+    height: 34px;
+    text-align: left;
+    text-decoration: none;
+    font: normal normal normal 25px/34px Open "Sans sarif";
+    font-size: 17.5px;
+    cursor: pointer;
+    letter-spacing: 0px;
+    color: #222222;
+    opacity: 1;
+  }
+  .navbar-button {
+    margin-top: 48px;
+    margin-right: 20px;
+    cursor: pointer;
+    width: 118px;
+    height: 45px;
+    font: normal normal normal 25px/34px Open "Sans sarif";
+    font-size: 17.5px;
+    color: #663399;
+    box-shadow: 0px 0px 20px #00000033;
+    border: 2px solid #663399;
+    border-radius: 24px;
+    opacity: 1;
+  }
+  .navbar-button1 {
+    margin-top: 48px;
+    margin-right: 80px;
+    text-align: center;
+    letter-spacing: 0px;
+    color: #ffffff;
+    font: normal normal normal 25px/34px Open "Sans sarif";
+    font-size: 17.5px;
+    width: 150px;
+    cursor: pointer;
+    text-decoration: none;
+    height: 45px;
+    background: transparent linear-gradient(90deg, #9f62c9 0%, #663399 100%) 0%
+      0% no-repeat padding-box;
+    box-shadow: 0px 0px 20px #00000033;
+    border-radius: 24px;
+    opacity: 1;
+  }
+
+  .home-title {
+    margin-top: 180px;
+    margin-left: 189px;
+    width: 407px;
+    height: 98px;
+    color: #222222;
+  }
+  .home-title > h1 {
+    font-size: 35px;
+    font: normal normal normal 25px/34px Open "Sans sarif";
+    line-height: 35px;
+  }
+  .line{
+    margin-top: 0;
+    width: 236px;
+    height: 8px;
+    background: #000000 0% 0% no-repeat padding-box;
+    border-radius: 13px;
+    opacity: 0.7;
+  }
+  .home-img {
+    margin-top: 20px;
+    margin-left: 170px;
+    width: 510px;
+    height: 285px;
+    background: transparent url("../assets/images/collect_img-video.png") 0% 0%
+      no-repeat padding-box;
+    background-position: center;
+    background-size: cover;
+    opacity: 1;
+    cursor: pointer;
+  }
+
+  /* home left side */
+
+  .home-left-side {
+    display: flex;
+    margin-top: 140px;
+    margin-left: 80px;
+    background: transparent url("../assets/images/accounting_dots.svg") 340px
+      490px no-repeat padding-box;
+    background-size: 340px 70px;
+  }
+  .dots-img {
+    margin-top: 256px;
+    margin-left: 182px;
+    width: 360px;
+    height: 60px;
+    opacity: 0.5;
+  }
+
+  /* small purple card */
+
+  .small-card {
+    margin-top: 120px;
+    margin-left: 8px;
+    margin-right: 10px;
+    height: 280px;
+    width: 200px;
+    color: #ffffff;
+    background-color: #663399;
+    box-shadow: 0px 0px 20px #00000033;
+    border-radius: 24px;
+    border: 3px;
+  }
+
+  .card-button {
+    margin-top: 20px;
+    margin-left: 40px;
+    text-align: center;
+    letter-spacing: 0px;
+    color: #663399;
+    left: 1622px;
+    width: 130px;
+    cursor: pointer;
+    height: 45px;
+    background: transparent #ffffff 0% 0% no-repeat padding-box;
+    font-size: 15px;
+    font-weight: 700;
+    box-shadow: 0px 0px 20px #ffffff33;
+    border-radius: 24px;
+    opacity: 1;
+  }
+  .card-top-text {
+    margin-top: 30px;
+    align-items: center;
+    margin-left: 50px;
+    opacity: 1;
+  }
+  .card-middle-text {
+    margin-top: 25px;
+    align-items: center;
+    margin-left: 50px;
+  }
+
+  /* Eligibility Calculator */
+
+  .eligibility-calculator {
+    margin-top: 40px;
+    margin-left: 35px;
+    align-items: center;
+    background-color: #ffffff;
+    height: 516px;
+    width: 330px;
+    box-shadow: 0px 0px 20px #68686833;
+    border: 3px;
+    border-radius: 24px;
+    opacity: 0.9;
+  }
+  .calculator-heading {
+    background-color: #eeebee;
+    text-align: center;
+    margin-top: -8px;
+    border-radius: 23px;
+    height: 35px;
+    font: normal normal normal 25px/34px Open "Sans sarif";
+  }
+  .calculator-heading > h3 {
+    text-align: center;
+    margin-top: 5px;
+    font-size: 20px;
+    opacity: 1;
+  }
+  .slider > h5 {
+    color: #313131;
+    margin-left: 30px;
+    margin-top: 40px;
+    font-size: 13px;
+    opacity: 1;
+  }
+  .range-slider {
+    width: 90%;
+    margin-top: -15px;
+    margin-left: 20px;
+  }
+  .slider-text h1 {
+    letter-spacing: 0.8px;
+    margin-top: -10px;
+    margin-left: 30px;
+    font-size: 20px;
+    font: normal normal normal 25px/34px Open "Sans sarif";
+    font-size: 20px;
+  }
+  .slider-bottom {
+    display: flex;
+    width: 100%;
+    margin-top: -24px;
+    justify-content: space-around;
+  }
+  .slider-bottom1{
+    margin-left: -39px;
+  }
+  .slider-bottom2{
+    margin-right: -45px;
+  }
+  .dropdown {
+    margin-left: 30px;
+  }
+  .from-dropdown {
+    width: 90%;
+    opacity: 1;
+    font-size: 17px;
+  }
+  .dropdown-heading {
+    color: #000000;
+  }
+  .on-off-button {
+    display: flex;
+    justify-content: space-around;
+  }
+  .on-off-button h5 {
+    font-size: 14px;
+    color: #000000;
+  }
+  .loan-input {
+    margin-left: 30px;
+    margin-top: 15px;
+  }
+  .loan-input-mat {
+    font-size: 14px;
+    color: #000000;
+    width: 90%;
+  }
+  .emi-input {
+    font-size: 18px;
+    color: #000000;
+    font-size: "sans sarif";
+  }
+
+  .home-right-side {
+    background: transparent url("../assets/images/blob-small.svg") -179px 153px no-repeat
+      padding-box;
+    background-size: 521px 562px;
+    opacity: 1;
+  }
+  .home {
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    opacity: 1;
+    font-size: 14px;
+    color: #000000;
+  }
+  .homePage {
+    height: 800px;
+    background: transparent url("../assets/images/circle.svg") 695px -327.9068603515625px
+      no-repeat padding-box;
+    background-size: 890px 1192px;
+    background-color: #fcfcff;
+    overflow: hidden;
+  }
+
+</style>
+
+
+
+
+
+
+<div class="homePage">
+  <!-- Navbar -->
+
+  <div class="Navbar" role="banner">
+    <img width="40" alt="Open Logo" src="../assets/images/logo.png" />
+    <div class="spacer"></div>
+    <a href="#" class="navbar-list">Product</a>
+    <a href="#" class="navbar-list">Solution</a>
+    <a href="#" class="navbar-list">Pricing</a>
+    <button class="navbar-button">Login</button>
+    <button class="navbar-button1">Get started</button>
+  </div>
+
+  <!-- Home -->
+
+  <div class="home">
+    <div class="home-right-side">
+      <div class="home-title">
+        <h1>We make it super<br />simple</h1>
+        <div class="line"></div>
+      </div>
+      <div class="home-img">
+        <img
+          class="dots-img"
+          src="../assets/images/accounting_dots.svg"
+          alt="dot image"
+        />
+      </div>
+    </div>
+
+    <!-- calculator -->
+
+    <div class="home-left-side">
+      <div class="eligibility-calculator">
+        <div class="calculator-heading">
+          <h3>Eligibility Calculator</h3>
+        </div>
+        <div class="slider">
+          <h5>Monthly Income</h5>
+          <div class="slider-text">
+            <h1>₹ {{ myModel }}</h1>
+          </div>
+          <mat-slider
+            class="range-slider"
+            min="100000"
+            max="300000"
+            step="4"
+            value="150000"
+            [(ngModel)]="myModel"
+          ></mat-slider>
+          <div class="slider-bottom">
+            <h5 class="slider-bottom1">₹ 1,00,000</h5>
+            <h5 class="slider-bottom2">₹ 3,00,000</h5>
+          </div>
+        </div>
+
+        <div class="slider">
+          <h5>Monthly Expense</h5>
+          <div class="slider-text">
+            <h1>₹ {{ myModel1 }}</h1>
+          </div>
+          <mat-slider
+            class="range-slider"
+            min="1000"
+            max="100000"
+            step="4"
+            value="15000"
+            [(ngModel)]="myModel1"
+          ></mat-slider>
+          <!--  -->
+          <div class="dropdown">
+            <mat-form-field class="from-dropdown">
+              <mat-label class="dropdown-heading">Repayment Tenure</mat-label>
+              <mat-select>
+                <mat-option value="one">6 Months</mat-option>
+                <mat-option value="two">12 Months</mat-option>
+                <mat-option value="three">18 Months</mat-option>
+                <mat-option value="four">24 Months</mat-option>
+              </mat-select>
+            </mat-form-field>
+          </div>
+
+          <div class="on-off-button">
+            <h5>Do you have any existing loans ?</h5>
+            <mat-slide-toggle></mat-slide-toggle>
+          </div>
+
+          <div class="loan-input">
+            <mat-form-field class="loan-input-mat">
+              <mat-label class="dropdown-heading"
+                >EMI on existing loan (optional)</mat-label
+              >
+              <input class="emi-input" matInput />
+            </mat-form-field>
+          </div>
+        </div>
+      </div>
+
+      <!-- small card -->
+
+      <div class="small-card">
+        <div class="card-top-text">
+          <h4>Loan Amount</h4>
+          <h2>₹ 1,00,000</h2>
+        </div>
+        <div class="card-middle-text">
+          <h4>Your EMI will be</h4>
+          <h2>₹ 15,000</h2>
+        </div>
+        <button class="card-button">Get Money</button>
+      </div>
+    </div>
+  </div>
+</div>
+<app-second-page></app-second-page>
+
+
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content above * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * End of Placeholder * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
+
+
+<router-outlet></router-outlet>
